@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ngx-mime-types": {
+      "projectType": "library",
+      "root": "projects/ngx-mime-types",
+      "sourceRoot": "projects/ngx-mime-types/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-mime-types/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-mime-types/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-mime-types/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-mime-types/src/test.ts",
+            "tsConfig": "projects/ngx-mime-types/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-mime-types/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-mime-types"
 }
