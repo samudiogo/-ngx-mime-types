@@ -1,5 +1,5 @@
 {
-  "name": "ngx-mime-types",
+  "name": "@samudiogo/ngx-mime-types",
   "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^15.1.0",
@@ -7,5 +7,12 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
